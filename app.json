@@ -1,0 +1,75 @@
+{
+    "id": "nl.darkcinema.vten",
+    "name": {
+        "en": "VTEN"
+    },
+    "version": "0.0.1",
+    "compatibility": "1.x",
+    "author": {
+        "name": "Oswin Peters",
+        "email": "oswin@darkcinema.nl"
+    },
+    "images": {
+      "large": "./assets/images/large.jpg",
+      "small": "./assets/images/small.jpg"
+    },
+    "category": "appliances",
+    "description": {
+      "en": "VTEN Media Player",
+      "nl": "VTEN Media PLayer"
+    },
+    "dependencies": {
+    		"xml2js": "*",
+            "http": "*"
+    },       
+    "flow": {
+        "actions": [
+            {
+                "id": "SetPower",
+                "title": {
+                    "en": "Power Commands"
+                },
+                "args": [
+                    {
+                        "name": "PowerCommand",
+                        "type": "autocomplete",
+                        "placeholder": {
+                            "en": "Power Commands"
+                        }
+                    }
+                 ]
+            },
+            {
+                "id": "SetNavigation",
+                "title": {
+                    "en": "Navigation Commands"
+                },
+                "args": [
+                    {
+                        "name": "NavigationCommand",
+                        "type": "autocomplete",
+                        "placeholder": {
+                            "en": "Navigation Commands"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "SetPlayer",
+                "title": {
+                    "en": "Player Commands"
+                },
+                "args": [
+                    {
+                        "name": "PlayerCommand",
+                        "type": "autocomplete",
+                        "placeholder": {
+                            "en": "Player Commands"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    
+}
